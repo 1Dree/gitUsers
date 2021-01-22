@@ -6,16 +6,25 @@
 
 #app {
   text-align: center;
+  padding: 20px 0;
+}
+
+#app #search {
+  margin: 20px 0;
+  padding: 10px;
 }
 
 #cards {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, 220px);
   justify-items: center;
+  justify-content: center;
   align-items: center;
 
   width: 80%;
+  height: 450px;
+  overflow-y: scroll;
   margin: 0 auto;
   padding: 20px;
   border-radius: 5px;

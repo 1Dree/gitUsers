@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SearchBox from "./searchBox";
-import Cards from "./Cards";
+import SearchBox from "../components/searchBox";
+import Cards from "../components/Cards";
 import "./App.css";
 
 class App extends Component {
@@ -22,9 +22,9 @@ class App extends Component {
       login.toLowerCase().includes(searchContent.toLowerCase())
     );
 
-    console.log(filteredUsers);
-
-    return (
+    return users.length === 0 ? (
+      <h2>Loading</h2>
+    ) : (
       <div id="app">
         <h1>Github Users</h1>
 

@@ -22,7 +22,7 @@ class App extends Component {
       login.toLowerCase().includes(searchContent.toLowerCase())
     );
 
-    return users.length === 0 ? (
+    return users.length < 30 ? (
       <h2>Loading</h2>
     ) : (
       <div id="app">
